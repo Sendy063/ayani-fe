@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap');
+
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.section-offset {
+  scroll-margin-top: 60px; /* Same as the navbar height */
 }
+
+
+body {
+  font-family: 'inter' sans-serif;
+}
+
+
+.bg-custom {
+  background-image: url('/public/assets/images/bg-hijau.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* NAVBAR */
+
+.transparent-nav {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.blurred-nav {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* .transparent-nav a {
+  color: white;
+}
+
+.blurred-nav a {
+  color: green;
+} */
+
+/* .blurred-nav a:hover {
+  color: #2F855A; 
+} */
+/* Warna hijau lebih terang saat hover */
+
+/* Galerry */
+
+.gallery-slider .slick-slide {
+  transition: transform 0.5s ease;
+}
+
+.gallery-slider .slick-center .slide-item {
+  transform: scale(1.1) perspective(1000px) rotateY(10deg);
+}
+
+.gallery-slider .slick-slide .slide-item {
+  transition: transform 0.5s ease;
+  margin-left: 10px; /* Menambahkan margin di kiri */
+  margin-right: 10px; /* Menambahkan margin di kanan */
+}
+
+@media (max-width: 1024px) {
+  .gallery-slider .slick-slide .slide-item {
+    margin-left: 20px; /* Menambahkan margin di kiri untuk 2 slide */
+    margin-right: 20px; /* Menambahkan margin di kanan untuk 2 slide */
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-slider .slick-slide .slide-item {
+    margin-left: 10px; /* Menambahkan margin di kiri untuk 1 slide */
+    margin-right: 10px; /* Menambahkan margin di kanan untuk 1 slide */
+  }
+}
+
+
+
+
+/* .bg-custom-program {
+    background-image: url('/public/assets/images/bg-hijau.webp');
+    background-size: cover;
+    background-position: center;
+  }
+
+.bg-custom-visimisi {
+    background-image: url('/public/assets/images/bg-hijau.webp');
+    background-size: cover;
+    background-position: center;
+  } */
+
