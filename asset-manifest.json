@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ayani-fe/static/css/main.753ac70a.css",
+    "main.js": "/ayani-fe/static/js/main.cdf8c683.js",
+    "static/media/bg-hijau.webp": "/ayani-fe/static/media/bg-hijau.ac001a3e025a08f4968c.webp",
+    "static/media/slick.svg": "/ayani-fe/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ayani-fe/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ayani-fe/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ayani-fe/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ayani-fe/index.html",
+    "main.753ac70a.css.map": "/ayani-fe/static/css/main.753ac70a.css.map",
+    "main.cdf8c683.js.map": "/ayani-fe/static/js/main.cdf8c683.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.753ac70a.css",
+    "static/js/main.cdf8c683.js"
+  ]
+}
